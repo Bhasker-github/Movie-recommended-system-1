@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">MovieRec</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Top Picks</a>
+            <a href="#">Genres</a>
+            <a href="#">Contact</a>
+        </nav>
+        <input type="text" id="searchBar" placeholder="Search for a movie...">
+        <select id="genreFilter">
+            <option value="">All Genres</option>
+            <option value="action">Action</option>
+            <option value="comedy">Comedy</option>
+            <option value="drama">Drama</option>
+            <option value="horror">Horror</option>
+        </select>
+    </header>
+
+    <main>
+        <section id="recommendations">
+            <h2>Recommended Movies</h2>
+            <div id="movieGrid">
+                <!-- Movie cards will be injected here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MovieRec. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

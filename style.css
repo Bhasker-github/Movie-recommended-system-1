@@ -1,0 +1,106 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1b1b1b;
+    color: #fff;
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#searchBar, #genreFilter {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 10px;
+}
+
+#searchBar {
+    width: 40%;
+}
+
+#genreFilter {
+    background-color: #ffcc00;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+}
+
+#recommendations h2 {
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+#movieGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.movieCard {
+    background-color: #292929;
+    border-radius: 10px;
+    width: 200px;
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.movieCard:hover {
+    transform: scale(1.05);
+}
+
+.movieCard img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.movieCard h3 {
+    margin: 10px 0 5px 0;
+    font-size: 18px;
+}
+
+.movieCard p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #ccc;
+}
+
+footer {
+    background-color: #333;
+    color: #ccc;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
