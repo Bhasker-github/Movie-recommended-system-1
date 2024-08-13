@@ -3,26 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Recommendation System</title>
+    <title>Advanced Movie Recommendation System</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="logo">MovieRec</div>
         <nav>
-            <a href="#">Home</a>
-            <a href="#">Top Picks</a>
-            <a href="#">Genres</a>
-            <a href="#">Contact</a>
+            <a href="index.html">Home</a>
         </nav>
         <input type="text" id="searchBar" placeholder="Search for a movie...">
+        <div id="searchSuggestions"></div>
         <select id="genreFilter">
             <option value="">All Genres</option>
-            <option value="action">Action</option>
-            <option value="comedy">Comedy</option>
-            <option value="drama">Drama</option>
-            <option value="horror">Horror</option>
+            <!-- Genres will be loaded dynamically -->
         </select>
+        <input type="number" id="releaseYearFilter" placeholder="Release Year">
+        <input type="range" id="ratingFilter" min="0" max="10" step="0.1" value="5">
+        <span id="ratingValue">5</span>
+        <button id="viewFavorites">View Favorites</button>
     </header>
 
     <main>
@@ -31,8 +30,18 @@
             <div id="movieGrid">
                 <!-- Movie cards will be injected here -->
             </div>
+            <button id="loadMore" style="display: none;">Load More</button>
         </section>
     </main>
+
+    <div id="movieModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <div id="movieDetails">
+                <!-- Movie details will be injected here -->
+            </div>
+        </div>
+    </div>
 
     <footer>
         <p>&copy; 2024 MovieRec. All Rights Reserved.</p>
